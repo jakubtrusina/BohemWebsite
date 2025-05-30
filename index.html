@@ -8,6 +8,14 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <nav>
+    <a href="#how-it-works">Jak to funguje</a>
+    <a href="#brands">Značky</a>
+    <a href="#about">O nás</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+
   <header>
     <h1>Bohem – Česká móda ve vaší kapse</h1>
     <p>Objevte nové kolekce. Nyní ke stažení pro iPhone.</p>
@@ -24,9 +32,69 @@
     </ul>
   </section>
 
+  <section class="preview">
+    <video autoplay muted loop playsinline width="100%">
+      <source src="your-app-demo.mp4" type="video/mp4" />
+    </video>
+    <div class="logos">
+      <img src="apple-logo.png" alt="Apple">
+      <img src="stripe-logo.png" alt="Stripe">
+      <img src="unreal-logo.png" alt="Unreal Engine">
+    </div>
+  </section>
+
+  <section id="how-it-works">
+    <h2>Jak to funguje</h2>
+    <div class="steps">
+      <div>📸 Vytvořte si avatar</div>
+      <div>👗 Vyzkoušejte si oblečení</div>
+      <div>💳 Nakupte jedním kliknutím</div>
+    </div>
+  </section>
+
+  <section id="brands">
+    <h2>Spolupracující značky</h2>
+    <p>Přidejte se jako návrhář. <a href="mailto:kontakt@bohem.app">Kontaktujte nás</a>.</p>
+    <div class="brand-logos">
+      <img src="brand1.png" alt="Brand 1">
+      <img src="brand2.png" alt="Brand 2">
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>O Bohem</h2>
+    <p>Bohem vznikl jako projekt pro moji maminku, inspirovaný spojením luxusu a technologie.</p>
+    <p>Naším cílem je, aby každá žena měla svůj vlastní 3D avatar a mohla stylově nakupovat.</p>
+  </section>
+
+  <section id="blog">
+    <h2>Blog & Média</h2>
+    <ul>
+      <li><a href="#">Jak jsme postavili Bohem</a></li>
+      <li><a href="#">Budoucnost módy ve 3D</a></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <form action="mailto:kontakt@bohem.app" method="POST">
+      <input type="text" placeholder="Vaše jméno" required>
+      <input type="email" placeholder="Váš e-mail" required>
+      <textarea placeholder="Vaše zpráva"></textarea>
+      <button type="submit">Odeslat</button>
+    </form>
+  </section>
+
   <footer>
-    <p>Kontakt: <a href="mailto:kontakt@bohem.app">kontakt@bohem.app</a></p>
+    <p><a href="#">Zásady ochrany soukromí</a> | <a href="#">Obchodní podmínky</a></p>
+    <p>Jazyk: 🇨🇿 / 🇬🇧</p>
+    <div class="social">
+      <a href="https://instagram.com/bohem">Instagram</a> |
+      <a href="https://linkedin.com/company/bohem">LinkedIn</a> |
+      <a href="#">TikTok</a>
+    </div>
+    <p>&copy; 2025 Bohem</p>
   </footer>
+
 </body>
 </html>
-

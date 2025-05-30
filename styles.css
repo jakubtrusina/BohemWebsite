@@ -6,6 +6,26 @@ body {
   color: #111;
 }
 
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 16px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+}
+
+/* Header */
 header {
   text-align: center;
   padding: 60px 20px;
@@ -27,6 +47,7 @@ header h1 {
   font-weight: bold;
 }
 
+/* Features */
 .features {
   padding: 40px 20px;
   text-align: center;
@@ -41,8 +62,145 @@ header h1 {
   margin: 12px 0;
 }
 
+/* Preview Section */
+.preview {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.preview video {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logos img {
+  height: 40px;
+  margin: 10px;
+}
+
+/* How It Works */
+#how-it-works {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+#how-it-works h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#how-it-works .steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#how-it-works .steps div {
+  flex: 1;
+  min-width: 150px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  font-size: 1.2rem;
+}
+
+/* Brands */
+#brands {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.brand-logos img {
+  height: 60px;
+  margin: 10px;
+}
+
+/* About */
+#about {
+  padding: 60px 20px;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+#about p {
+  max-width: 700px;
+  margin: 12px auto;
+}
+
+/* Blog */
+#blog {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#blog ul {
+  list-style: none;
+  padding: 0;
+}
+
+#blog li {
+  margin: 12px 0;
+}
+
+#blog a {
+  color: #111;
+  text-decoration: underline;
+}
+
+/* Contact */
+#contact {
+  padding: 60px 20px;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+#contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#contact input,
+#contact textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+#contact button {
+  background-color: black;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  opacity: 0.9;
+}
+
+/* Footer */
 footer {
   background-color: #eee;
   text-align: center;
   padding: 20px;
+  font-size: 0.9rem;
+}
+
+footer .social {
+  margin: 10px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #111;
 }
