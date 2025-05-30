@@ -1,449 +1,13 @@
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-  color: #111;
-}
+/* === CLEAN LANDING PAGE STYLES === */
 
-/* Navigation */
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 16px;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-nav a {
-  text-decoration: none;
-  color: #111;
-  font-weight: bold;
-}
-
-/* Header */
-header {
-  text-align: center;
-  padding: 60px 20px;
-  background-color: #f6f6f6;
-}
-
-header h1 {
-  font-size: 2.5rem;
-}
-
-.cta-button {
-  display: inline-block;
-  background: black;
-  color: white;
-  padding: 12px 24px;
-  text-decoration: none;
-  border-radius: 6px;
-  margin-top: 20px;
-  font-weight: bold;
-}
-
-/* Features */
-.features {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.features ul {
-  list-style: none;
-  padding: 0;
-}
-
-.features li {
-  margin: 12px 0;
-}
-
-/* Preview Section */
-.preview {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.preview video {
-  max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.logos img {
-  height: 40px;
-  margin: 10px;
-}
-
-/* How It Works */
-#how-it-works {
-  padding: 60px 20px;
-  text-align: center;
-  background-color: #f9f9f9;
-}
-
-#how-it-works h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-#how-it-works .steps {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-#how-it-works .steps div {
-  flex: 1;
-  min-width: 150px;
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  font-size: 1.2rem;
-}
-
-/* Brands */
-#brands {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.brand-logos img {
-  height: 60px;
-  margin: 10px;
-}
-
-/* About */
-#about {
-  padding: 60px 20px;
-  background-color: #f6f6f6;
-  text-align: center;
-}
-
-#about p {
-  max-width: 700px;
-  margin: 12px auto;
-}
-
-/* Blog */
-#blog {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-#blog ul {
-  list-style: none;
-  padding: 0;
-}
-
-#blog li {
-  margin: 12px 0;
-}
-
-#blog a {
-  color: #111;
-  text-decoration: underline;
-}
-
-/* Contact */
-#contact {
-  padding: 60px 20px;
-  background-color: #fafafa;
-  text-align: center;
-}
-
-#contact form {
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-#contact input,
-#contact textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-}
-
-#contact button {
-  background-color: black;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-#contact button:hover {
-  opacity: 0.9;
-}
-
-/* Footer */
-footer {
-  background-color: #eee;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-}
-
-footer .social {
-  margin: 10px 0;
-}
-
-footer a {
-  text-decoration: none;
-  color: #111;
-}
-
-/* Landing Page */
-body.landing {
-  margin: 0;
-  padding: 0;
-  background-color: white;
-  font-family: sans-serif;
-  color: #111;
-  text-align: center;
-}
-
-.landing-hero {
-  padding: 40px 0;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.top-nav, .bottom-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.center-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 20px;
-}
-
-.center-content h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.center-content p {
-  font-size: 1.2rem;
-  margin: 10px 0;
-}
-
-.cta-button {
-  margin-top: 20px;
-  padding: 12px 32px;
-  background: black;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-
-/* Subpage Styling */
-.subpage-header {
-  padding: 20px;
-  text-align: left;
-}
-
-.back-link {
-  text-decoration: none;
-  color: #111;
-  font-weight: bold;
-}
-
-.content {
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 0 20px;
-  text-align: center;
-}
-
-.content h1 {
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-}
-
-.content p {
-  margin-bottom: 20px;
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-/* Login Form */
-form {
-  max-width: 400px;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-form input {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-}
-
-form button {
-  background-color: black;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-form button:hover {
-  opacity: 0.9;
-}
-
-.logo-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto 10px;
-  padding-top: 20px;
-}
-
-.logo {
-  height: 40px;
-  width: auto;
-}
-.center-content {
-  padding: 30px 20px 10px;
-}
-
-.center-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 8px;
-}
-
-.center-content p {
-  font-size: 1.1rem;
-  margin: 8px 0;
-}
-
-.top-nav {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 10px 0;
-  font-weight: 600;
-  font-size: 1rem;
-  border-bottom: none;
-}
-.center-content {
-  position: relative;
-  z-index: 1;
-}
-
-.center-content,
-.top-nav,
-.bottom-nav,
-.logo-wrapper {
-  position: relative;
-  z-index: 1;
-}
-.video-container {
-  display: flex;
-  justify-content: center;
-  padding: 40px 20px;
-  background-color: #fff;
-}
-
-.inline-video {
-  width: 90%;
-  max-width: 960px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.landing-hero-square {
-  position: relative;
-  min-height: 100vh;
-  padding: 40px 20px;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-}
-
-/* Corner links */
-.corner-link {
-  position: absolute;
-  font-weight: bold;
-  text-decoration: none;
-  color: #111;
-  padding: 12px;
-  z-index: 2;
-}
-
-.top-left {
-  top: 20px;
-  left: 20px;
-}
-
-.top-right {
-  top: 20px;
-  right: 20px;
-}
-
-.bottom-left {
-  bottom: 20px;
-  left: 20px;
-}
-
-.bottom-right {
-  bottom: 20px;
-  right: 20px;
-}
-
-.landing-hero-square .video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.landing-hero-square .inline-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.2; /* Light overlay */
-}
 html, body {
-  height: 100%;
   margin: 0;
-  overflow: hidden; /* Prevent scrolling */
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: white;
+  color: black;
 }
 
 body.landing {
@@ -455,46 +19,71 @@ body.landing {
   position: relative;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  flex-direction: column;
+  overflow: hidden;
 }
 
 .video-container {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+  inset: 0;
   z-index: 0;
+  overflow: hidden;
 }
 
 .inline-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.25; /* Slight overlay to keep text readable */
+  opacity: 0.25;
 }
 
 .center-content {
   position: relative;
   z-index: 2;
-  color: #000;
+  color: black;
 }
 
+.center-content h1 {
+  font-size: 3rem;
+  margin: 8px 0;
+}
+
+.center-content p {
+  font-size: 1.2rem;
+  margin: 8px 0;
+}
+
+.cta-button {
+  margin-top: 16px;
+  padding: 12px 28px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.logo {
+  height: 42px;
+  margin-bottom: 12px;
+}
+
+/* Corner nav links */
 .corner-link {
   position: absolute;
   z-index: 3;
   font-weight: bold;
-  color: #000;
+  color: black;
   text-decoration: none;
-  padding: 12px;
+  padding: 8px 12px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
+  font-size: 0.95rem;
 }
 
 .top-left     { top: 20px; left: 20px; }
@@ -502,7 +91,4 @@ body.landing {
 .bottom-left  { bottom: 20px; left: 20px; }
 .bottom-right { bottom: 20px; right: 20px; }
 
-.logo {
-  height: 40px;
-  margin-bottom: 12px;
-}
+/* === END CLEAN LANDING PAGE STYLES === */
