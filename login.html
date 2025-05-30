@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Přihlášení</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <header class="subpage-header">
-    <a href="index.html" class="back-link">← Zpět</a>
+<body class="landing">
+  <header class="landing-hero-square">
+
+    <!-- Corner links -->
+    <a href="index.html" class="corner-link top-left">Domů</a>
+    <a href="about.html" class="corner-link top-right">O Bohem</a>
+    <a href="brands.html" class="corner-link bottom-left">Značky</a>
+    <a href="contact.html" class="corner-link bottom-right">Kontakt</a>
+
+    <!-- Centered content -->
+    <div class="center-content">
+      <h1>Přihlášení</h1>
+      <p><strong>Možnost přihlášení bude brzy dostupná.</strong></p>
+      <p>Pracujeme na způsobu, jak se přihlásit do aplikace Bohem a spravovat své oblíbené produkty i digitální profil.</p>
+
+      <p style="margin-top: 28px;">📩 Mezitím nám můžete napsat na: <a href="mailto:kontakt@bohem.app">kontakt@bohem.app</a></p>
+    </div>
+
+    <!-- Background video -->
+    <div class="video-container">
+      <video autoplay muted loop playsinline class="inline-video">
+        <source src="bohem-background.mp4" type="video/mp4" />
+      </video>
+    </div>
+
   </header>
-
-  <main class="content">
-    <h1>Přihlášení</h1>
-    <p>Přihlaste se do svého účtu.</p>
-
-    <form onsubmit="event.preventDefault(); alert('Zatím není připojeno k backendu.');">
-      <input type="email" placeholder="E-mail" required>
-      <input type="password" placeholder="Heslo" required>
-      <button type="submit">Přihlásit se</button>
-    </form>
-
-    <p style="margin-top: 20px;">Nemáte účet? <a href="mailto:kontakt@bohem.app">Kontaktujte nás</a> pro přístup.</p>
-  </main>
-
-  <footer class="bottom-nav">
-    <a href="app.html">Získat aplikaci</a>
-    <a href="contact.html">Kontakt</a>
-  </footer>
 </body>
 </html>

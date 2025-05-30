@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kontakt</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <header class="subpage-header">
-    <a href="index.html" class="back-link">← Zpět</a>
+<body class="landing">
+  <header class="landing-hero-square">
+
+    <!-- Corner links -->
+    <a href="index.html" class="corner-link top-left">Domů</a>
+    <a href="about.html" class="corner-link top-right">O Bohem</a>
+    <a href="brands.html" class="corner-link bottom-left">Značky</a>
+    <a href="login.html" class="corner-link bottom-right">Přihlášení</a>
+
+    <!-- Centered content -->
+    <div class="center-content">
+      <h1>Kontakt</h1>
+      <p><strong>Máte otázku, návrh na spolupráci, nebo chcete být součástí Bohem?</strong></p>
+      <p>Napište mi kdykoliv:</p>
+
+      <p style="margin-top: 20px; font-size: 1.2rem;">
+        📩 <a href="mailto:jakub.trusina@bohem.app">jakub.trusina@bohem.app</a>
+      </p>
+
+      <p style="margin-top: 32px;">Rád se ozvu zpět co nejdříve.</p>
+    </div>
+
+    <!-- Background video -->
+    <div class="video-container">
+      <video autoplay muted loop playsinline class="inline-video">
+        <source src="bohem-background.mp4" type="video/mp4" />
+      </video>
+    </div>
+
   </header>
-
-  <main class="content">
-    <h1>Kontaktujte nás</h1>
-    <p>Máte otázky, nápady nebo se chcete stát součástí Bohem?</p>
-
-    <form action="mailto:kontakt@bohem.app" method="POST" enctype="text/plain">
-      <input type="text" name="name" placeholder="Vaše jméno" required>
-      <input type="email" name="email" placeholder="Váš e-mail" required>
-      <textarea name="message" rows="5" placeholder="Vaše zpráva"></textarea>
-      <button type="submit">Odeslat</button>
-    </form>
-  </main>
-
-  <footer class="bottom-nav">
-    <a href="about.html">O Bohem</a>
-    <a href="brands.html">Pro Značky</a>
-  </footer>
 </body>
 </html>
