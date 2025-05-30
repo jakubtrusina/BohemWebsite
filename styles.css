@@ -1,4 +1,4 @@
-/* === CLEAN LANDING PAGE STYLES === */
+/* === BOHEM LANDING PAGE STYLES === */
 
 html, body {
   margin: 0;
@@ -6,8 +6,8 @@ html, body {
   height: 100%;
   overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #000;
 }
 
 body.landing {
@@ -15,6 +15,7 @@ body.landing {
   overflow: hidden;
 }
 
+/* Main full-height hero layout */
 .landing-hero-square {
   position: relative;
   height: 100vh;
@@ -27,6 +28,7 @@ body.landing {
   overflow: hidden;
 }
 
+/* Background video */
 .video-container {
   position: absolute;
   inset: 0;
@@ -41,49 +43,69 @@ body.landing {
   opacity: 0.25;
 }
 
+/* Centered foreground content */
 .center-content {
   position: relative;
   z-index: 2;
-  color: black;
+  text-align: center;
+  padding: 0 20px;
+  color: #000;
 }
 
 .center-content h1 {
   font-size: 3rem;
-  margin: 8px 0;
+  margin: 10px 0;
 }
 
 .center-content p {
   font-size: 1.2rem;
-  margin: 8px 0;
-}
-
-.cta-button {
-  margin-top: 16px;
-  padding: 12px 28px;
-  background: black;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  display: inline-block;
+  margin: 10px 0;
 }
 
 .logo {
-  height: 42px;
-  margin-bottom: 12px;
+  height: 48px;
+  margin-bottom: 16px;
 }
 
-/* Corner nav links */
+/* CTA button */
+.cta-button {
+  margin-top: 20px;
+  padding: 14px 32px;
+  background-color: #000;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: opacity 0.2s ease;
+}
+
+.cta-button:hover {
+  opacity: 0.85;
+}
+
+.cta-button.large {
+  font-size: 1.2rem;
+  padding: 16px 40px;
+}
+
+/* Corner nav links – clean black text */
 .corner-link {
   position: absolute;
-  z-index: 3;
-  font-weight: bold;
-  color: black;
+  font-weight: 600;
+  color: #000;
   text-decoration: none;
-  padding: 8px 12px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 8px;
   font-size: 0.95rem;
+  background: none;
+  border: none;
+  padding: 0;
+  z-index: 3;
+  transition: opacity 0.2s ease;
+}
+
+.corner-link:hover {
+  opacity: 0.6;
 }
 
 .top-left     { top: 20px; left: 20px; }
@@ -91,4 +113,4 @@ body.landing {
 .bottom-left  { bottom: 20px; left: 20px; }
 .bottom-right { bottom: 20px; right: 20px; }
 
-/* === END CLEAN LANDING PAGE STYLES === */
+/* === END LANDING PAGE STYLES === */
