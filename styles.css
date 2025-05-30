@@ -206,17 +206,21 @@ footer a {
 }
 
 /* Landing Page */
-body.landing, .landing-hero {
-  height: 100vh;
+body.landing {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-color: white;
   font-family: sans-serif;
+  color: #111;
   text-align: center;
+}
+
+.landing-hero {
+  padding: 40px 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .top-nav, .bottom-nav {
@@ -319,14 +323,38 @@ form button:hover {
 .logo-wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  align-items: center;
+  margin: 0 auto 10px;
+  padding-top: 20px;
 }
 
 .logo {
-  height: 60px;
+  height: 40px;
   width: auto;
 }
+.center-content {
+  padding: 30px 20px 10px;
+}
 
+.center-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.center-content p {
+  font-size: 1.1rem;
+  margin: 8px 0;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 1rem;
+  border-bottom: none;
+}
 .center-content {
   position: relative;
   z-index: 1;
