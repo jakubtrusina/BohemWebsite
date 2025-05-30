@@ -1,87 +1,33 @@
 <!DOCTYPE html>
 <html lang="cs">
-  <head id="head-placeholder"></head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bohem – Česká móda ve vaší kapse</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="landing">
 
-  <body>
-    <div id="nav-placeholder"></div>
-    <div id="header-placeholder"></div>
+  <header class="landing-hero">
 
-<div id="features-placeholder"></div>
+    <nav class="top-nav">
+      <a href="about.html">O Bohem</a>
+      <a href="brands.html">Pro Značky</a>
+    </nav>
 
+    <div class="center-content">
+      <h1>Bohem</h1>
+      <p>Vyzkoušejte stylový nákup, jaký jste ještě nezažili.</p>
+      <p><strong>🎯 Česká móda. Osobní výběr. Již brzy i ve 3D.</strong></p>
+      <a class="cta-button" href="app.html">Získat aplikaci</a>
+    </div>
 
-    <section class="preview">
-      <video autoplay muted loop playsinline width="100%">
-        <source src="your-app-demo.mp4" type="video/mp4" />
-      </video>
-      <div class="logos">
-        <img src="apple-logo.png" alt="Apple">
-        <img src="stripe-logo.png" alt="Stripe">
-        <img src="unreal-logo.png" alt="Unreal Engine">
-      </div>
-    </section>
-
-    <section id="how-it-works">
-      <h2>Jak to funguje</h2>
-      <div class="steps">
-        <div>📸 Vytvořte si avatar</div>
-        <div>👗 Vyzkoušejte si oblečení</div>
-        <div>💳 Nakupte jedním kliknutím</div>
-      </div>
-    </section>
-
-    <section id="brands">
-      <h2>Spolupracující značky</h2>
-      <p>Přidejte se jako návrhář. <a href="mailto:kontakt@bohem.app">Kontaktujte nás</a>.</p>
-      <div class="brand-logos">
-        <img src="brand1.png" alt="Brand 1">
-        <img src="brand2.png" alt="Brand 2">
-      </div>
-    </section>
-
-    <section id="about">
-      <h2>O Bohem</h2>
-      <p>Bohem vznikl jako projekt pro moji maminku, inspirovaný spojením luxusu a technologie.</p>
-      <p>Naším cílem je, aby každá žena měla svůj vlastní 3D avatar a mohla stylově nakupovat.</p>
-    </section>
-
-    <section id="blog">
-      <h2>Blog & Média</h2>
-      <ul>
-        <li><a href="#">Jak jsme postavili Bohem</a></li>
-        <li><a href="#">Budoucnost módy ve 3D</a></li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Kontakt</h2>
-      <form action="mailto:kontakt@bohem.app" method="POST">
-        <input type="text" placeholder="Vaše jméno" required>
-        <input type="email" placeholder="Váš e-mail" required>
-        <textarea placeholder="Vaše zpráva"></textarea>
-        <button type="submit">Odeslat</button>
-      </form>
-    </section>
-
-    <footer>
-      <p><a href="#">Zásady ochrany soukromí</a> | <a href="#">Obchodní podmínky</a></p>
-      <p>Jazyk: 🇨🇿 / 🇬🇧</p>
-      <div class="social">
-        <a href="https://instagram.com/bohem">Instagram</a> |
-        <a href="https://linkedin.com/company/bohem">LinkedIn</a> |
-        <a href="#">TikTok</a>
-      </div>
-      <p>&copy; 2025 Bohem</p>
+    <footer class="bottom-nav">
+      <a href="contact.html">Kontakt</a>
+      <a href="login.html">Přihlášení</a>
     </footer>
 
-    <script>
-    const includes = ['head', 'nav', 'header', 'features'];
-      includes.forEach(id => {
-        fetch(`partials/${id}.html`)
-          .then(res => res.text())
-          .then(html => {
-            document.getElementById(`${id}-placeholder`).outerHTML = html;
-          });
-      });
-    </script>
-  </body>
+  </header>
+
+</body>
 </html>

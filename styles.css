@@ -204,3 +204,114 @@ footer a {
   text-decoration: none;
   color: #111;
 }
+
+/* Landing Page */
+body.landing, .landing-hero {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.top-nav, .bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.center-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.center-content p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 12px 32px;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* Subpage Styling */
+.subpage-header {
+  padding: 20px;
+  text-align: left;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+}
+
+.content {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.content p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Login Form */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: black;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  opacity: 0.9;
+}
