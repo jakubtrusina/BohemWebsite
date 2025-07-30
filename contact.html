@@ -16,17 +16,46 @@
     <a href="login.html" class="corner-link bottom-right">Přihlášení</a>
 
     <!-- Centered content -->
-    <div class="center-content">
-      <h1>Kontakt</h1>
-      <p><strong>Máte otázku, návrh na spolupráci, nebo chcete být součástí Bohem?</strong></p>
-      <p>Napište mi kdykoliv:</p>
+<!-- Centered content -->
+<div class="center-content">
+  <h1>Kontakt</h1>
+  <p><strong>Máte otázku, návrh na spolupráci, nebo chcete být součástí Bohem?</strong></p>
+  <p>Napište mi kdykoliv:</p>
 
-      <p style="margin-top: 20px; font-size: 1.2rem;">
-        📩 <a href="mailto:jakub.trusina@bohem.app">jakub.trusina@bohem.app</a>
-      </p>
+<form
+  action="https://formspree.io/f/xwpqqeee"
+  method="POST"
+  onsubmit="gtag('event', 'conversion', {'send_to': 'AW-17414201844/YOUR_FORM_LABEL'});"
+  style="margin-top: 24px; display: flex; flex-direction: column; align-items: center; gap: 12px;"
+>
+  <input
+    type="email"
+    name="email"
+    placeholder="Váš e-mail"
+    required
+    style="padding: 12px; width: 100%; max-width: 300px; border-radius: 6px; border: 1px solid #ccc;"
+  />
 
-      <p style="margin-top: 32px;">Rád se ozvu zpět co nejdříve.</p>
-    </div>
+  <textarea
+    name="message"
+    placeholder="Vaše zpráva"
+    required
+    style="padding: 12px; width: 100%; max-width: 300px; height: 120px; border-radius: 6px; border: 1px solid #ccc;"
+  ></textarea>
+
+  <button
+    type="submit"
+    class="cta-button large"
+    style="background: black; color: white; padding: 12px 24px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer;"
+  >
+    📬 Odeslat zprávu
+  </button>
+</form>
+
+<p style="margin-top: 32px;">Rád se ozvu zpět co nejdříve.</p>
+
+</div>
+
 
     <!-- Background video -->
     <div class="video-container">
