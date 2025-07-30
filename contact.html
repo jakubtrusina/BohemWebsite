@@ -5,7 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kontakt</title>
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17414201844"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17414201844');
+  </script>
+
+  <!-- Google Ads conversion tracking for contact form -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) !== 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17414201844/YDT9CIG20vsaEPTD3u9A',
+        'value': 1.0,
+        'currency': 'USD',
+        'event_callback': callback
+      });
+      return true;
+    }
+  </script>
 </head>
+
 <body class="landing">
   <header class="landing-hero-square">
 
@@ -16,16 +44,16 @@
     <a href="login.html" class="corner-link bottom-right">Přihlášení</a>
 
     <!-- Centered content -->
-<!-- Centered content -->
-<div class="center-content">
-  <h1>Kontakt</h1>
-  <p><strong>Máte otázku, návrh na spolupráci, nebo chcete být součástí Bohem?</strong></p>
-  <p>Napište mi kdykoliv:</p>
+    <div class="center-content">
+      <h1>Kontakt</h1>
+      <p><strong>Máte otázku, návrh na spolupráci, nebo chcete být součástí Bohem?</strong></p>
+      <p>Napište mi kdykoliv:</p>
 
+      <!-- Contact Form -->
 <form
   action="https://formspree.io/f/xwpqqeee"
   method="POST"
-  onsubmit="gtag('event', 'conversion', {'send_to': 'AW-17414201844/YOUR_FORM_LABEL'});"
+  onsubmit="return gtag_report_conversion('https://bohem.app/diky.html');"
   style="margin-top: 24px; display: flex; flex-direction: column; align-items: center; gap: 12px;"
 >
   <input
@@ -52,10 +80,9 @@
   </button>
 </form>
 
-<p style="margin-top: 32px;">Rád se ozvu zpět co nejdříve.</p>
 
-</div>
-
+      <p style="margin-top: 32px;">Rád se ozvu zpět co nejdříve.</p>
+    </div>
 
     <!-- Background video -->
     <div class="video-container">

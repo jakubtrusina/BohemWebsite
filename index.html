@@ -15,7 +15,24 @@
     gtag('js', new Date());
     gtag('config', 'AW-17414201844');
   </script>
+
+  <!-- Conversion event function for download button -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) !== 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17414201844/7oSkCLWZ0vsaEPTD3u9A',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
 </head>
+
 
 <body class="landing">
 
@@ -34,12 +51,13 @@
       <p><strong>Česká móda. Osobní výběr.</strong></p>
 <a
   class="cta-button large"
-  href="https://apps.apple.com/app/id6744303886"
-  target="_blank"
-  onclick="gtag('event', 'conversion', {'send_to': 'AW-17414201844/BoehmDownload'});"
+  href="#"
+  onclick="return gtag_report_conversion('https://apps.apple.com/app/id6744303886');"
 >
-  Stáhnout aplikaci
+  📲 Stáhnout aplikaci
 </a>
+
+
     </div>
 
     <!-- Background video -->
